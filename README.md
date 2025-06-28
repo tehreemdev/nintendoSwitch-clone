@@ -47,3 +47,8 @@ nintendoSwitch-clone/
 ├── tailwind.config.js
 ├── vite.config.ts
 └── README.md
+
+##  Author
+Tehreem Khalid
+Frontend Web Developer | Passionate about clean UI/UX
+📫 GitHub | LinkedIn (https://www.linkedin.com/in/tehreemkhalid/)
