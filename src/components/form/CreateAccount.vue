@@ -74,8 +74,8 @@
         <div class="text-sm flex justify-center my-4">
           <a class="text-gray-400" href="Login"
             >Already have an account?
-
-            <span class="text-teal-400">Go to Login</span>
+<RouterLink to=/> <span class="text-teal-400">Go to Login</span></RouterLink>
+           
           </a>
         </div>
       </article>
@@ -83,7 +83,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router';
+</script>
 
 <style scoped>
 .box {

@@ -11,7 +11,9 @@
 
     <article class="flex gap-2 lg:gap-6 md:gap-6 sm:gap-5 text-md lg:text-2xl">
       <div class="flex flex-col items-center text-white">
-        <search />
+        <router-link to="/nintendo/search">
+          <search />
+        </router-link>
         <p class="text-sm">Search</p>
       </div>
 

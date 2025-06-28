@@ -4,10 +4,20 @@
       class="flex flex-wrap lg:flex-col md:flex-col p-4 sm:p-4 gap-3 sm:gap-3 md:gap-0 md:p-0"
     >
       <div
-        class="bg-red-600 hover:bg-red-700 h-32 sm:h-32 md:h-20 lg:h-20 mt-[0.5px] w-20 rounded-tr-xl flex items-center justify-center flex-col"
+        class="bg-red-600 list-none hover:bg-red-700 h-32 sm:h-32 md:h-20 lg:h-20 mt-[0.5px] w-20 rounded-tr-xl flex items-center justify-center flex-col"
       >
-        <games />
-        <p class="text-white text-xs">Games</p>
+        <router-link to="/nintendo" class="text-white"> <games />Games</router-link>
+        <!-- <div class="pl-24">
+          <li class="relative">
+            <ul class="absolute bg-white px-6 py-5">
+              <li>
+                Nintendo Games
+              </li>
+            </ul>
+          </li>
+        </div> -->
+
+        <!-- <p class="text-white text-xs">Games</p> -->
       </div>
 
       <div

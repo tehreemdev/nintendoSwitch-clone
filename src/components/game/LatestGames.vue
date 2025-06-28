@@ -1,6 +1,6 @@
 <template>
   <div>
-    <article class="grid lg:grid-cols-3 gap-1 h-fit lg:pl-[100px] md:pl-[100px]">
+    <article class="grid lg:grid-cols-3 gap-1 h-fit lg:pl-[86px] md:pl-[86px]">
       <img
         class="h-full w-full lg:h-44 lg:w-64 object-cover rounded-md"
         src="/images/game1.webp"

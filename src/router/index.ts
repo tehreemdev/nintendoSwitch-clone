@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
+// import Login from '../views/loginsite.vue'
 import Login from '../views/loginsite.vue'
-import calculation from '../views/calculation.vue'
-import tests from '../views/test.vue'
 import signupSite from '../views/signupSite.vue'
 import nintendo from '../views/nintendo.vue'
 import games from '@/views/games/index.vue'
+import gameDetails from '@/views/games/[gameId].vue'
 import search from '@/views/games/search.vue'
 import nintendoSwitchFamily from '@/views/hardware/nintendoSwitchFamily.vue'
 const router = createRouter({
@@ -15,21 +15,13 @@ const router = createRouter({
       name: 'Login',
       component: Login
     },
-    {
-      path: '/ptc',
-      name: 'test',
-      component: tests
-    },
+
     {
       path: '/signup',
       name: 'signupSite',
       component: signupSite
     },
-    {
-      path: '/calculation',
-      name: 'calculate',
-      component: calculation
-    },
+
     {
       path: '/nintendo',
       name: 'Nintendo',
@@ -39,6 +31,11 @@ const router = createRouter({
       path: '/nintendo/games',
       name: 'games',
       component: games
+    },
+    {
+      path: '/nintendo/games/:gameId',
+      name: 'gameDetail',
+      component: gameDetails
     },
     {
       path: '/nintendo/search',

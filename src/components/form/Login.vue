@@ -1,8 +1,7 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div>
     <article class="flex justify-center">
-      <article class="px-2 formWidth sm:px-6 md:px-12 border-4 rounded-md border-slate-700">
+      <form class="px-2 formWidth sm:px-6 md:px-12 border-4 rounded-md border-slate-700">
         <div>
           <h1 class="text-white mt-4 md:mt-8 lg:mt-12 flex justify-center">
             Enter your Credentials
@@ -19,7 +18,8 @@
           </label>
           <input
             id="email"
-            class="mt-2 bg-slate-700 border rounded-md h-10 text-sm w-full text-white"
+            placeholder="example@gmail.com"
+            class="mt-2 bg-slate-700 border pl-3 rounded-md h-10 text-sm w-full text-white"
             type="email"
             v-model="email"
           />
@@ -35,7 +35,9 @@
             v-model="password"
           />
           <p v-if="passwordError" class="text-red-500 text-sm">{{ passwordError }}</p>
-          <a class="flex justify-end text-gray-400 text-sm mt-6" href="">Forget Password</a>
+          <RouterLink class="flex justify-end text-gray-400 text-sm mt-6"
+            >Forget Password</RouterLink
+          >
         </div>
 
         <section class="flex justify-center mt-4">
@@ -47,6 +49,7 @@
         <div class="text-sm mt-6 flex justify-center">
           <a class="text-gray-400" href="signup">
             Don't have an account?
+            <!-- <RouterLink to="/signup"></RouterLink> -->
             <span class="text-teal-400">Create one</span>
           </a>
         </div>
@@ -62,14 +65,14 @@
           <github />
           <chrome />
         </div>
-      </article>
+      </form>
     </article>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { RouterLink, useRouter } from 'vue-router'
 
 const router = useRouter()
 

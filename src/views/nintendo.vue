@@ -24,7 +24,7 @@
 <script setup lang="ts">
 import Navbar from '../components/bar/Navbar.vue'
 import SideBar from '../components/bar/sideBar/SideBar.vue'
-import LatestGames from '@/components/form/LatestGames.vue'
+import LatestGames from '@/components/game/LatestGames.vue'
 import LatestNews from '../components/news/LatestNews.vue'
 
 import { ref } from 'vue'
