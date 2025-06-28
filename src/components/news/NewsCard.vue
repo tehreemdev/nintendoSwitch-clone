@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-32 p-2 mt-1 bg-white drop-shadow-lg">
     <section>
-      <img class="h-20 lg:h-20 md:h-full bg-red-400" src="../../../images/CardImage.png  " alt="" />
+      <img class="h-20 lg:h-20 md:h-full bg-red-400" src="/images/CardImage.png  " alt="" />
     </section>
     <section class="">
       <p class="font-bold text-sm md:text-lg lg:text-sm">{{ news.title }}</p>
